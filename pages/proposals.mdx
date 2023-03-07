@@ -7,6 +7,8 @@
 - entityId
 -
 
-```js filename="proposals.ts" {3} copy
-const proposals = await fetch("https://houseofnouns.wtf/api/proposals");
+```js filename="proposals-example.ts" {3} copy
+const { data: proposals } = await fetch(
+  "https://houseofnouns.wtf/api/proposals?entityId=..."
+);
 ```
