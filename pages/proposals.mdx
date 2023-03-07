@@ -2,12 +2,18 @@
 
 ### Get all proposals for a DAO
 
+This endpoint is built to help you get all proposals for a DAO.
+
 **Arguments**:
 
 - entityId
+
+**Example**:
 
 ```js filename="proposals-example.ts" {3} copy
 const { data: proposals } = await fetch(
   "https://houseofnouns.wtf/api/proposals?entityId=..."
 );
 ```
+
+**Schema**:
