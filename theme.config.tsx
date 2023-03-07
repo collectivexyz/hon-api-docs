@@ -63,6 +63,11 @@ const config: DocsThemeConfig = {
   footer: {
     text: "House of Nouns API Documentation - by collective.xyz",
   },
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s – House of Nouns API",
+    };
+  },
 };
 
 export default config;
